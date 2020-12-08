@@ -12,12 +12,7 @@ if (result.error) {
  
 console.log(result.parsed)
 
- 
-if (result.error) {
-  throw result.error
-}
- 
-console.log(result.parsed)
+
 
 mongoose.connect(process.env.MONGODB_URL,{useNewUrlParser: true} )
 
