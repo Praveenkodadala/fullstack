@@ -14,7 +14,7 @@ console.log(result.parsed)
 
 
 
-mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser: true} )
+mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser: true , useUnifiedTopology: true} )
 
 
 
