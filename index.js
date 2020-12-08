@@ -2,10 +2,23 @@ const express = require('express');
 const server = express();
 const PORT = process.env.PORT || 3000;
 const connectDb = require('./connection');
-require('dotenv').config();
+const dotenv = require('dotenv')
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
+
+
+
+const result = dotenv.config({silent: true})
+ 
+if (result.error) {
+  throw result.error
+}
+ 
+console.log("dbportresult", result.parsed)
+
+
+
 
 
 server.get('/', (req, res)=>{
