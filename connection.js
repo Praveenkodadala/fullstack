@@ -1,16 +1,16 @@
-const dotenv = require('dotenv')
-require('dotenv').config();
+const dotenv = require('dotenv').config();
+// require('dotenv').config();
 const mongoose = require('mongoose');
 
 
 
-const result = dotenv.config()
+// const result = dotenv.config()
  
-if (result.error) {
-  throw result.error
-}
+// if (result.error) {
+//   throw result.error
+// }
  
-console.log(result.parsed)
+// console.log(result.parsed)
 
 
 
